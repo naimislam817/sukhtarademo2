@@ -41,12 +41,12 @@
     }
   ],
   "amenities": [
-    { "icon": "🛎️", "label": "24/7 Concierge" },
-    { "icon": "🍽️", "label": "Fine Dining" },
-    { "icon": "💪", "label": "Fitness Center" },
-    { "icon": "🏛️", "label": "Conference Hall" },
-    { "icon": "🔒", "label": "Secure Premises" },
-    { "icon": "📶", "label": "Free Wi-Fi" }
+    { "icon": "🛎️", "label": "24/7 Concierge", "description": "Our dedicated concierge team is available around the clock to assist with every request, ensuring a seamless and memorable stay." },
+    { "icon": "🍽️", "label": "Fine Dining", "description": "Experience authentic flavours at Rasun Restaurant, our in-house dining destination celebrating the best of traditional Bangla cuisine." },
+    { "icon": "💪", "label": "Fitness Center", "description": "Stay energized in our fully equipped gym featuring modern exercise machines, free weights, and a motivating atmosphere." },
+    { "icon": "🏛️", "label": "Conference Hall", "description": "Host professional meetings and corporate events in our sophisticated conference room with high-speed internet and AV equipment." },
+    { "icon": "🔒", "label": "Secure Premises", "description": "Guest safety is our top priority. Our premises are monitored 24/7 with professional security systems and trained personnel." },
+    { "icon": "📶", "label": "Free Wi-Fi", "description": "High-speed complimentary Wi-Fi is available throughout the hotel, keeping you connected for both business and leisure needs." }
   ],
   "gym": {
     "name": "Gym",
