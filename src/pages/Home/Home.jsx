@@ -1,9 +1,22 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Home.css';
 import hotelData from '../../data/hotelData.json';
 
 export default function Home() {
   const { hotelInfo, stats, amenities, rooms } = hotelData;
+
+  const heroImages = [
+    '/images/hero-reception.jpg',
+    '/images/hero-banner.jpg'
+  ];
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % heroImages.length);
+    }, 5000);
+    return () => clearInterval(timer);
+  }, []);
 
   // Featured rooms — show first 3
   const featuredRooms = rooms.slice(0, 3);
@@ -48,13 +61,17 @@ export default function Home() {
       ═══════════════════════════════════════════ */}
       <section className="hero-section" id="home">
         <div className="hero-bg">
-          <img
-            src="/images/hero.jpg"
-            alt="Hotel Shuktara — A Tradition of Gracious Hospitality"
-            onError={(e) => {
-              e.target.src = 'https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1600&q=85';
-            }}
-          />
+          {heroImages.map((imgUrl, idx) => (
+            <img
+              key={idx}
+              src={imgUrl}
+              alt={`Hotel Shuktara Slide ${idx + 1}`}
+              className={currentSlide === idx ? 'active' : ''}
+              onError={(e) => {
+                e.target.src = 'https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1600&q=85';
+              }}
+            />
+          ))}
         </div>
         <div className="hero-overlay" />
 
@@ -72,9 +89,14 @@ export default function Home() {
 
         {/* Slide indicator dots */}
         <div className="hero-dots">
-          <span className="hero-dot active" />
-          <span className="hero-dot" />
-          <span className="hero-dot" />
+          {heroImages.map((_, idx) => (
+            <span
+              key={idx}
+              className={`hero-dot ${currentSlide === idx ? 'active' : ''}`}
+              onClick={() => setCurrentSlide(idx)}
+              style={{ cursor: 'pointer' }}
+            />
+          ))}
         </div>
       </section>
 
