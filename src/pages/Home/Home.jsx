@@ -47,15 +47,6 @@ export default function Home() {
           HERO — Full-width cinematic banner
       ═══════════════════════════════════════════ */}
       <section className="hero-section" id="home">
-        <div className="hero-bg">
-          <img
-            src="/images/hero-reception.jpg"
-            alt="Hotel Shuktara — A Tradition of Gracious Hospitality"
-            onError={(e) => {
-              e.target.src = 'https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1600&q=85';
-            }}
-          />
-        </div>
         <div className="hero-overlay" />
 
         <div className="container hero-content">
