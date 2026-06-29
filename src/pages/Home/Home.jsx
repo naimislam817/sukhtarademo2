@@ -1,22 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './Home.css';
 import hotelData from '../../data/hotelData.json';
 
 export default function Home() {
   const { hotelInfo, stats, amenities, rooms } = hotelData;
-
-  const heroImages = [
-    '/images/hero-reception.jpg',
-    '/images/hero-banner.jpg'
-  ];
-  const [currentSlide, setCurrentSlide] = useState(0);
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % heroImages.length);
-    }, 5000);
-    return () => clearInterval(timer);
-  }, []);
 
   // Featured rooms — show first 3
   const featuredRooms = rooms.slice(0, 3);
@@ -61,42 +48,26 @@ export default function Home() {
       ═══════════════════════════════════════════ */}
       <section className="hero-section" id="home">
         <div className="hero-bg">
-          {heroImages.map((imgUrl, idx) => (
-            <img
-              key={idx}
-              src={imgUrl}
-              alt={`Hotel Shuktara Slide ${idx + 1}`}
-              className={currentSlide === idx ? 'active' : ''}
-              onError={(e) => {
-                e.target.src = 'https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1600&q=85';
-              }}
-            />
-          ))}
+          <img
+            src="/images/hero-reception.jpg"
+            alt="Hotel Shuktara — A Tradition of Gracious Hospitality"
+            onError={(e) => {
+              e.target.src = 'https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1600&q=85';
+            }}
+          />
         </div>
         <div className="hero-overlay" />
 
         <div className="container hero-content">
-          <p className="hero-eyebrow">A TRADITION OF EXCELLENCE</p>
+          <p className="hero-eyebrow">WELCOME TO EXCELLENCE</p>
           <h1 className="hero-title">A Tradition of Gracious Hospitality</h1>
           <p className="hero-desc">
-            Experience world-class comfort in the heart of Dhaka. We bridge the gap between global standards and local warmth, pioneering premium residential hotel experiences in Bangladesh.
+            Experience formal elegance and local warmth in the heart of Dhaka's Farmgate.
           </p>
           <div className="hero-cta">
-            <a href="#about" className="btn-hero-primary">DISCOVER MORE</a>
-            <a href="#/book-now" className="btn-hero-ghost">BOOK NOW</a>
+            <a href="#/rooms" className="btn-hero-primary">DISCOVER SUITES</a>
+            <a href="#about" className="btn-hero-ghost">VIEW GALLERY</a>
           </div>
-        </div>
-
-        {/* Slide indicator dots */}
-        <div className="hero-dots">
-          {heroImages.map((_, idx) => (
-            <span
-              key={idx}
-              className={`hero-dot ${currentSlide === idx ? 'active' : ''}`}
-              onClick={() => setCurrentSlide(idx)}
-              style={{ cursor: 'pointer' }}
-            />
-          ))}
         </div>
       </section>
 

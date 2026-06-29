@@ -36,12 +36,6 @@
   object-fit: cover;
   object-position: center 30%;
   display: block;
-  opacity: 0;
-  transition: opacity 1.2s ease-in-out;
-}
-
-.hero-bg img.active {
-  opacity: 1;
 }
 
 .hero-overlay {
