@@ -1,0 +1,249 @@
+/* ═══════════════════════════════════════════════
+   BOOK NOW PAGE — STYLES
+   ═══════════════════════════════════════════════ */
+
+.booknow-page {
+  background-color: var(--bg-light);
+}
+
+/* ── Hero Title Bar ────────────────────────── */
+.booknow-hero {
+  background-color: #f8f6f3;
+  text-align: center;
+  padding: 56px 20px 52px;
+  border-bottom: 1px solid #e8e4df;
+}
+
+.booknow-hero-eyebrow {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 15px;
+  color: var(--primary-color);
+  margin: 0 0 10px;
+  letter-spacing: 0.02em;
+}
+
+.booknow-hero-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 700;
+  color: var(--text-dark);
+  letter-spacing: 0.06em;
+  margin: 0 0 18px;
+}
+
+.booknow-hero-rule {
+  display: block;
+  width: 60px;
+  height: 2px;
+  background-color: var(--text-dark);
+  margin: 0 auto;
+}
+
+/* ── Main Section ──────────────────────────── */
+.booknow-section {
+  padding: 5rem 0 7rem;
+}
+
+.booknow-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+@media (max-width: 860px) {
+  .booknow-layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+/* ── Left Info Panel ───────────────────────── */
+.booknow-info {
+  padding-top: 8px;
+}
+
+.booknow-info-title {
+  font-family: var(--font-serif);
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  letter-spacing: 0.06em;
+  margin: 0 0 8px;
+}
+
+.booknow-info-sub {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin: 0 0 32px;
+}
+
+.booknow-info-logo {
+  margin-top: 32px;
+}
+
+.booknow-info-logo img {
+  width: 80px;
+  opacity: 0.85;
+}
+
+/* ── Form ──────────────────────────────────── */
+.booknow-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-dark);
+  letter-spacing: 0.02em;
+}
+
+.form-group .req {
+  color: #c0392b;
+  margin-left: 2px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #d8d3cd;
+  background-color: #fcfcfc;
+  font-family: var(--font-sans);
+  font-size: 14px;
+  color: var(--text-dark);
+  border-radius: 2px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(22, 106, 109, 0.1);
+  background-color: #fff;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-group select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='8' viewBox='0 0 14 8'%3E%3Cpath d='M1 1l6 6 6-6' stroke='%23555' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  padding-right: 40px;
+  cursor: pointer;
+}
+
+/* Error States */
+.form-group.has-error input,
+.form-group.has-error select,
+.form-group.has-error textarea {
+  border-color: #c0392b;
+}
+
+.field-error {
+  font-size: 12px;
+  color: #c0392b;
+  margin-top: 2px;
+}
+
+/* Two-column row */
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+@media (max-width: 560px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Global Error Banner */
+.global-error {
+  padding: 12px 16px;
+  background-color: #fdf2f2;
+  border: 1px solid #f5c6cb;
+  border-radius: 2px;
+  font-size: 13px;
+  color: #c0392b;
+}
+
+/* Submit Button */
+.btn-book-submit {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1a1e1b;
+  color: #ffffff;
+  padding: 15px 40px;
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition-normal);
+  text-decoration: none;
+  border-radius: 0;
+}
+
+.btn-book-submit:hover {
+  background-color: var(--primary-color);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(22, 106, 109, 0.25);
+}
+
+/* ── Success Screen ─────────────────────────── */
+.booknow-success {
+  max-width: 560px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.success-icon {
+  width: 72px;
+  height: 72px;
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  margin: 0 auto 28px;
+}
+
+.booknow-success h2 {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  color: var(--text-dark);
+  margin-bottom: 16px;
+}
+
+.booknow-success p {
+  font-size: 15px;
+  color: var(--text-muted);
+  line-height: 1.8;
+}

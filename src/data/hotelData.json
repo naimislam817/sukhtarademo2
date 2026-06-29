@@ -1,0 +1,191 @@
+{
+  "hotelInfo": {
+    "name": "Hotel Shuktara (Pvt.) Ltd.",
+    "tagline": "The Finest Safe Hotel In Dhaka",
+    "established": "Dhaka, Bangladesh",
+    "rating": "3★",
+    "ratingLabel": "Star Hotel Dhaka",
+    "checkIn": "1:00 PM",
+    "checkOut": "12:00 PM",
+    "address": "20/A Indira Road, Farmgate, Dhaka-1215, Bangladesh",
+    "phones": ["01998-888777", "01840-440090"],
+    "email": "info@hotelshuktara.com",
+    "reservationEmail": "reservation@hotelshuktara.com"
+  },
+  "stats": [
+    { "number": "50+", "label": "Premium Rooms" },
+    { "number": "15+", "label": "Years of Excellence" },
+    { "number": "10k+", "label": "Happy Guests" },
+    { "number": "4.5★", "label": "Guest Rating" }
+  ],
+  "facilities": [
+    {
+      "label": "Rooftop Terrace",
+      "sublabel": "Open-air retreat",
+      "img": "/images/rooftop.jpg"
+    },
+    {
+      "label": "Guest Rooms",
+      "sublabel": "Comfort & elegance",
+      "img": "/images/room.jpg"
+    },
+    {
+      "label": "Reception & Lobby",
+      "sublabel": "Warm welcome",
+      "img": "/images/lobby.jpg"
+    },
+    {
+      "label": "Rasun Restaurant",
+      "sublabel": "Fine dining",
+      "img": "/images/restaurant.jpg"
+    }
+  ],
+  "amenities": [
+    { "icon": "🛎️", "label": "24/7 Concierge" },
+    { "icon": "🍽️", "label": "Fine Dining" },
+    { "icon": "💪", "label": "Fitness Center" },
+    { "icon": "🏛️", "label": "Conference Hall" },
+    { "icon": "🔒", "label": "Secure Premises" },
+    { "icon": "📶", "label": "Free Wi-Fi" }
+  ],
+  "gym": {
+    "name": "Gym",
+    "description": "Our fitness centre is equipped with a range of modern exercise machines and free weights, providing an inviting space for all our guests. Whether you want to energize your morning or unwind after a busy day, our gym offers a comfortable and motivating environment. At Hotel Shuktara Dhaka, we ensure your stay is well-balanced, seamlessly blending relaxation, fitness, and luxury.",
+    "image": "/images/gym.jpg"
+  },
+  "conference": {
+    "name": "Conference Room",
+    "description": "Hotel Shuktara Dhaka provides a professional and fully-equipped conference room ideal for hosting corporate meetings and events. Designed with modern business needs in mind, our conference room offers a comfortable and sophisticated setting, complete with high-speed internet, audio-visual equipment, and flexible seating arrangements. Whether you're planning a board meeting, training session, or corporate seminar, our dedicated staff is on hand to ensure everything runs smoothly.",
+    "image": "/images/conference.jpg"
+  },
+  "restaurant": {
+    "name": "Rasun Restaurant",
+    "eyebrow": "EXQUISITE WORLD CLASS RESTAURANT EXPERIENCE",
+    "description": "Rasun is a restaurant dedicated to celebrating the rich and vibrant flavours of traditional Bangla cuisine. At Rasun, we offer an authentic culinary experience, featuring time-honoured recipes prepared with fresh, locally sourced ingredients. Guests can enjoy a warm and inviting dine-in experience or opt for the convenience of takeaway, ensuring a delightful experience with every meal. Beyond dining, Rasun serves as an excellent venue for hosting parties and celebrations, providing the perfect setting for creating unforgettable memories.",
+    "phone": "+8801840440090",
+    "phoneTiming": "Available At 9am – 10pm",
+    "email": "info@hotelshuktara.com",
+    "signImage": "/images/restaurant.jpg",
+    "menuCategories": [
+      {
+        "category": "Bengali Platters (Set 1-8)",
+        "items": [
+          { "id": "p1", "name": "Platter 1", "items": ["White rice", "Chicken Bhuna / Rezala / Roast", "Plain Dal / Vegetable", "Aloo / Begun / Chingri Bhorta", "Salad"], "price": "BDT 360/=" },
+          { "id": "p2", "name": "Platter 2", "items": ["White rice", "Beef Bhuna / Achari / Kala bhuna", "Plain Dal / Vegetable", "Aloo / Potol Bhorta", "Salad"], "price": "BDT 400/=" },
+          { "id": "p3", "name": "Platter 3", "items": ["White rice", "Rui / Pabda / Mola fish", "Plain Dal / Vegetable", "Begun / Shutki mach / Kalo Jeera Bhorta", "Salad"], "price": "BDT 350/=" },
+          { "id": "p4", "name": "Platter 4", "items": ["White Rice", "Hilsha", "Plain Dal / Vegetable", "Tomato / Dal / Aloo Bhorta", "Salad"], "price": "BDT 700/=" },
+          { "id": "p5", "name": "Platter 5", "items": ["White Rice", "Plain Dal", "Aloo Bhaji / Begun Bhaji", "Shutki / Taki / Chingri Bhorta", "Salad"], "price": "BDT 210/=" },
+          { "id": "p6", "name": "Platter 6", "isVeg": true, "items": ["White Rice", "Plain Dal", "Aloo Bhaji / Begun Bhaji", "Tomato / Sim / Patal Bhorta", "Salad"], "price": "BDT 200/=" },
+          { "id": "p7", "name": "Platter 7", "items": ["White Rice", "Plain Dal / Vegetable", "Mutton Bhuna", "Shutki / Taki / Chingri Bhorta", "Salad"], "price": "BDT 500/=" },
+          { "id": "p8", "name": "Platter 8", "items": ["White Rice", "Rupchada / Chingri bhuna", "Plain Dal / Vegetable", "Tomato / Dal / Aloo Bhorta", "Salad"], "price": "BDT 600/=" }
+        ]
+      },
+      {
+        "category": "Special Khichuri & Biriyani (Set 9-16)",
+        "items": [
+          { "id": "p9", "name": "Platter 9", "items": ["Beef Bhuna Khichuri", "Jali / Chapli / Shami Kabab", "Chutney", "Salad", "Drinks"], "price": "BDT 400/=" },
+          { "id": "p10", "name": "Platter 10", "items": ["Mutton Bhuna Khichuri", "Jali / Chapli / Shami kabab", "Chutney", "Salad", "Drinks"], "price": "BDT 500/=" },
+          { "id": "p11", "name": "Platter 11", "items": ["Chicken Bhuna Khichury", "Jali / Chapli / Shami Kabab", "Chutney", "Salad", "Drinks"], "price": "BDT 320/=" },
+          { "id": "p12", "name": "Platter 12", "isVeg": true, "items": ["Vegetable Khichuri", "Kalo Jeera Bhorta / Morich Bhorta", "Egg Omelette / Fried", "Chutney", "Salad"], "price": "BDT 250/=" },
+          { "id": "p13", "name": "Platter 13", "items": ["Chicken Biriyani", "Jali / Chapli / Shami kabab", "Chutney", "Salad", "Drinks"], "price": "BDT 320/=" },
+          { "id": "p14", "name": "Platter 14", "items": ["Mutton Biriyani", "Jali / Chapli / Shami Kabab", "Chutney", "Salad", "Drinks"], "price": "BDT 500/=" },
+          { "id": "p15", "name": "Platter 15", "items": ["Murog Pulao", "Jali / Chapli / Shami Kabab", "Chutney", "Salad", "Drinks"], "price": "BDT 320/=" },
+          { "id": "p16", "name": "Platter 16", "items": ["Beef Tehari", "Jali / Chapli / Shami Kabab", "Chutney", "Salad", "Drinks"], "price": "BDT 350/=" }
+        ]
+      },
+      {
+        "category": "Naan & Kabab Specials",
+        "items": [
+          { "id": "k1", "name": "Platter 1", "items": ["Plain Naan / Butter Naan / Paratha", "Chicken Tandoori / Tengri Kabab", "Salad", "Drinks"], "price": "BDT 330/=" },
+          { "id": "k2", "name": "Platter 2", "items": ["Plain Naan / Butter Naan / Paratha", "Chicken Hariyali Kabab / Reshmi Kabab", "Salad", "Drinks"], "price": "BDT 330/=" },
+          { "id": "k3", "name": "Platter 3", "items": ["Plain Naan / Butter Naan / Paratha", "Beef Sheek Kabab", "Salad", "Drinks"], "price": "BDT 380/=" },
+          { "id": "k4", "name": "Platter 4", "isVeg": true, "items": ["Plain Naan / Butter Naan / Paratha", "Dal / Vegetable", "Salad", "Drinks"], "price": "BDT 180/=" }
+        ]
+      }
+    ]
+  },
+  "roomsContent": {
+    "title": "ROOMS",
+    "eyebrow": "Gracious hospitality",
+    "description": "At Hotel Shuktara Dhaka, we offer a wide range of luxurious accommodations to ensure a delightful stay. Our 99 timelessly designed guest rooms are equipped with modern amenities to provide the utmost comfort and convenience. Guests can enjoy complimentary breakfasts and airport pickup services, making every aspect of your stay seamless and relaxing."
+  },
+  "rooms": [
+    {
+      "id": "premium-triple",
+      "name": "Premium Triple",
+      "description": "Our Premium Triple Rooms are spacious and ideal for families seeking a relaxing stay. Each room features three comfortable beds, a private bathroom, and air conditioning.",
+      "information": "Our Premium Triple Rooms are spacious and ideal for families seeking a relaxing stay. Each room features three comfortable beds, a private bathroom, a refrigerator, and a range of modern amenities. Enjoy complimentary Wi-Fi, a minibar, 24/7 room service, and ample storage with a wardrobe. Additionally, the room is air-conditioned and includes a large flat-screen TV with a variety of international channels, ensuring comfort and convenience for all guests.",
+      "capacity": "3 Persons",
+      "bedType": "3 Single Beds",
+      "features": ["Air Conditioning", "Private Bathroom", "Refrigerator", "Flat-Screen TV", "Complimentary Wi-Fi", "Minibar", "24/7 Room Service", "Wardrobe Storage"],
+      "mainImage": "/images/room-triple.jpg",
+      "gallery": ["/images/room-triple-1.jpg", "/images/room-triple-2.jpg", "/images/room-triple-3.jpg"]
+    },
+    {
+      "id": "deluxe-twin",
+      "name": "Deluxe Twin",
+      "description": "Our deluxe twin rooms offer a cozy and relaxing environment, beautifully decorated in soothing white hues. These rooms come with air conditioning, a private bathroom, and modern furnishings.",
+      "information": "Our Deluxe Twin Rooms offer a cozy and relaxing environment, beautifully decorated in soothing white hues. These rooms come with air conditioning, a private bathroom, a refrigerator, and a flat-screen TV with a variety of international channels. Enjoy the convenience of complimentary Wi-Fi, a minibar, 24/7 room service, and ample storage with a wardrobe. The rooms are also equipped with comfortable twin beds, making them an ideal choice for a relaxing stay.",
+      "capacity": "2 Persons",
+      "bedType": "2 Twin Beds",
+      "features": ["Air Conditioning", "Private Bathroom", "Refrigerator", "Flat-Screen TV", "Complimentary Wi-Fi", "Minibar", "24/7 Room Service", "Wardrobe Storage"],
+      "mainImage": "/images/room-deluxe-twin.jpg",
+      "gallery": ["/images/room-deluxe-twin-1.jpg", "/images/room-deluxe-twin-2.jpg"]
+    },
+    {
+      "id": "superior-twin",
+      "name": "Superior Twin",
+      "description": "Our cozy Superior Twin Rooms are elegantly decorated in soothing white tones, fostering a serene and inviting atmosphere. Each air-conditioned room features twin beds and premium bedding.",
+      "information": "Our cozy Superior Twin Rooms are elegantly decorated in soothing white tones, fostering a serene and inviting atmosphere. Each air-conditioned room features a private bathroom, refrigerator, and a flat-screen TV with a variety of international channels. Guests can enjoy complimentary Wi-Fi, a minibar, 24/7 room service, and ample storage space with a spacious wardrobe. The comfortable twin beds and well-organized layout ensure a restful and convenient stay.",
+      "capacity": "2 Persons",
+      "bedType": "2 Superior Twin Beds",
+      "features": ["Air Conditioning", "Private Bathroom", "Refrigerator", "Flat-Screen TV", "Complimentary Wi-Fi", "Minibar", "24/7 Room Service", "Spacious Wardrobe"],
+      "mainImage": "/images/room-superior-twin.jpg",
+      "gallery": ["/images/room-superior-twin-1.jpg", "/images/room-superior-twin-2.jpg"]
+    },
+    {
+      "id": "premium-deluxe-king",
+      "name": "Premium Deluxe King",
+      "description": "Our Premium Deluxe King Room is the largest and most luxurious option, ideal for families or friends seeking an exceptional stay. This expansive room offers a king-size bed and upgraded amenities.",
+      "information": "Our Premium Deluxe King Room is the largest and most luxurious option, ideal for families or friends seeking an exceptional stay. This expansive room features a king-size bed, a private bathroom, and a refrigerator. Elegantly decorated, it includes air conditioning, a flat-screen TV with international channels, and all the conveniences of complimentary Wi-Fi, a minibar, 24/7 room service, and a spacious wardrobe. Designed for an unparalleled experience, it promises the utmost in comfort and luxury.",
+      "capacity": "2-3 Persons",
+      "bedType": "1 King Bed",
+      "features": ["King-size Bed", "Air Conditioning", "Private Bathroom", "Refrigerator", "Flat-Screen TV", "Complimentary Wi-Fi", "Minibar", "24/7 Room Service", "Spacious Wardrobe"],
+      "mainImage": "/images/room-premium-deluxe-king.jpg",
+      "gallery": ["/images/room-premium-deluxe-king-1.jpg", "/images/room-premium-deluxe-king-2.jpg"]
+    },
+    {
+      "id": "deluxe-king",
+      "name": "Deluxe King",
+      "description": "Our Deluxe King Rooms offer a luxurious experience, with stylish decor and ample space to relax. Each room includes a comfortable king-size bed, a private bathroom, and premium room service.",
+      "information": "Our Deluxe King Rooms offer a luxurious experience, with stylish decor and ample space to relax. Each room includes a comfortable king-size bed, a private bathroom, and a refrigerator. Stay comfortable with air conditioning and enjoy entertainment with a flat-screen TV featuring international channels. Additional amenities include complimentary Wi-Fi, a minibar, 24/7 room service, and a spacious wardrobe for your belongings.",
+      "capacity": "2 Persons",
+      "bedType": "1 King Bed",
+      "features": ["King-size Bed", "Air Conditioning", "Private Bathroom", "Refrigerator", "Flat-Screen TV", "Complimentary Wi-Fi", "Minibar", "24/7 Room Service", "Spacious Wardrobe"],
+      "mainImage": "/images/room-deluxe-king.jpg",
+      "gallery": ["/images/room-deluxe-king-1.jpg", "/images/room-deluxe-king-2.jpg"]
+    },
+    {
+      "id": "superior-king",
+      "name": "Superior King",
+      "description": "Our Superior King Rooms offer a cozy and inviting atmosphere to create a relaxing environment. Each room includes a private bathroom, a refrigerator, and a comfortable king-size bed.",
+      "information": "Our Superior King Rooms offer a cozy and inviting atmosphere to create a relaxing environment. Each room includes a private bathroom, a refrigerator, and a comfortable king-size bed. Additionally, the room is air-conditioned and equipped with a large flat-screen TV offering a selection of international channels. A spacious wardrobe provides ample storage space, ensuring all your belongings are neatly organized.",
+      "capacity": "2 Persons",
+      "bedType": "1 King Bed",
+      "features": ["King-size Bed", "Air Conditioning", "Private Bathroom", "Refrigerator", "Flat-Screen TV", "Complimentary Wi-Fi", "Spacious Wardrobe"],
+      "mainImage": "/images/room-superior-king.jpg",
+      "gallery": ["/images/room-superior-king-1.jpg", "/images/room-superior-king-2.jpg"]
+    },
+    {
+      "id": "standard-single",
+      "name": "Standard Single",
+      "description": "Our Standard Rooms are thoughtfully designed to provide comfort and convenience, featuring a private bathroom and a refrigerator for your everyday needs.",
+      "information": "Our Standard Rooms are thoughtfully designed to provide comfort and convenience, featuring a private bathroom and a refrigerator for your everyday needs. Guests can enjoy complimentary Wi-Fi, a minibar, 24/7 room service, and ample storage space with an in-room wardrobe. Each room is air-conditioned and equipped with a large flat-screen TV offering a variety of international channels. Additionally, with on-site parking and an in-house restaurant, we ensure that everything you need for a comfortable and enjoyable stay is readily available.",
+      "capacity": "1 Person",
+      "bedType": "1 Single Bed",
+      "features": ["Air Conditioning", "Private Bathroom", "Refrigerator", "Flat-Screen TV", "Complimentary Wi-Fi", "Minibar", "24/7 Room Service", "On-site Parking", "In-house Restaurant"],
+      "mainImage": "/images/room-standard-single.jpg",
+      "gallery": ["/images/room-standard-single-1.jpg", "/images/room-standard-single-2.jpg"]
+    }
+  ]
+}

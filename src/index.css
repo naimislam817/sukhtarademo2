@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&family=Merriweather:wght@300;400;700&family=Noto+Serif:wght@300;400;600;700&display=swap');
+
+/* CSS Variables for Design Tokens */
+:root {
+  --primary-color: #166a6d;       /* Brand teal */
+  --primary-hover: #115052;       /* Darker teal for hovers */
+  --primary-light: #e8f3f4;       /* Extremely light teal tint */
+  --accent-color: #c59d5f;        /* Brand gold/bronze */
+  --accent-hover: #a6814c;         /* Darker gold for hovers */
+  --text-dark: #222222;           /* Primary text */
+  --text-light: #f8f9fa;          /* Contrast light text */
+  --text-muted: #777777;          /* Secondary/muted text */
+  --text-footer: #bbbbbb;         /* Footer body text */
+  --bg-light: #ffffff;            /* Base background */
+  --bg-alt: #f9f9f9;              /* Secondary page sections background */
+  --bg-dark: #111111;             /* Top bar and Footer background */
+  --bg-dark-alt: #1a1a1a;         /* Copyright bar background */
+  --border-color: #e5e7eb;        /* Light borders */
+  --border-dark: #333333;         /* Dark/footer borders */
+  
+  /* Fonts */
+  --font-sans: 'Nunito Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-serif: 'Merriweather', 'Noto Serif', Georgia, serif;
+  
+  /* Transitions */
+  --transition-fast: all 0.2s ease-in-out;
+  --transition-normal: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  
+  /* Layout constraints */
+  --max-width: 1300px;
+}
+
+/* Base Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-dark);
+  background-color: var(--bg-light);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  color: var(--text-dark);
+  line-height: 1.3;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: var(--transition-fast);
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  outline: none;
+}
+
+/* Helper Utilities */
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.75rem;
+  border-radius: 9999px;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: var(--transition-normal);
+  border: 1px solid transparent;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(22, 106, 109, 0.2);
+}
+
+.btn-accent {
+  background-color: var(--accent-color);
+  color: var(--text-light);
+}
+
+.btn-accent:hover {
+  background-color: var(--accent-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(197, 157, 95, 0.2);
+}
+
+.btn-outline {
+  background-color: transparent;
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.btn-outline:hover {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+}
+
+/* Utility layout components */
+.section {
+  padding: 5rem 0;
+}
+
+.section-bg {
+  background-color: var(--bg-alt);
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Global utility colors */
+.color-accent {
+  color: var(--accent-color);
+}
