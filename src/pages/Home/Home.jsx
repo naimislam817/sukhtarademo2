@@ -38,35 +38,7 @@ export default function Home() {
   return (
     <div className="home-page">
 
-      {/* ═══════════════════════════════════════════
-          HERO
-      ═══════════════════════════════════════════ */}
-      <section className="hero-section" id="home">
 
-        <div className="container hero-content">
-          <span className="hero-index">No. 01 — FARMGATE, DHAKA</span>
-          <h1 className="hero-title">
-            A Tradition of<br />
-            <em>Gracious</em> Hospitality
-          </h1>
-          <p className="hero-desc">
-            Formal elegance and local warmth, held together in the heart of the city —
-            a residential hotel built the way hospitality used to be practised.
-          </p>
-          <div className="hero-cta">
-            <a href="#/rooms" className="btn-hero-primary">
-              <span>Discover Suites</span>
-              <svg width="16" height="10" viewBox="0 0 16 10" fill="none"><path d="M1 5H15M15 5L10.5 1M15 5L10.5 9" stroke="currentColor" strokeWidth="1.4"/></svg>
-            </a>
-            <a href="#about" className="btn-hero-ghost">View Gallery</a>
-          </div>
-        </div>
-
-        <div className="hero-scroll" aria-hidden="true">
-          <span className="hero-scroll-line" />
-          <span className="hero-scroll-text">SCROLL</span>
-        </div>
-      </section>
 
       {/* Running heritage marquee */}
       <div className="marquee-strip" aria-hidden="true">
