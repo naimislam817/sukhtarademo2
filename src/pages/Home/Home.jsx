@@ -42,14 +42,6 @@ export default function Home() {
           HERO
       ═══════════════════════════════════════════ */}
       <section className="hero-section" id="home">
-        <div className="hero-media hero-media--empty" />
-        <div className="hero-grain" />
-        <div className="hero-frame" aria-hidden="true">
-          <span className="corner tl" />
-          <span className="corner tr" />
-          <span className="corner bl" />
-          <span className="corner br" />
-        </div>
 
         <div className="container hero-content">
           <span className="hero-index">No. 01 — FARMGATE, DHAKA</span>
