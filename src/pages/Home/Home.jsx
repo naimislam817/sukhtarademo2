@@ -5,8 +5,8 @@ import hotelData from '../../data/hotelData.json';
 export default function Home() {
   const { hotelInfo, stats, amenities, rooms } = hotelData;
 
-  // Featured rooms — show first 3 rooms on the homepage
-  const featuredRooms = rooms.slice(0, 3);
+  // Featured rooms — exclude Superior Twin
+  const featuredRooms = rooms.filter(r => r.id !== 'superior-twin').slice(0, 2);
 
   const gallery = [
     {
