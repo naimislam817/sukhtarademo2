@@ -1,1 +1,13 @@
-/* Home page — currently empty */
+/* Home page */
+
+.hero-section {
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
