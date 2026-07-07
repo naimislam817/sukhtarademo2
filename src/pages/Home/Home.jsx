@@ -232,13 +232,17 @@ export default function Home() {
               <div className="room-card" key={room.id}>
                 <div className="room-card-img">
                   <div className="room-card-media">
-                    <img
-                      src={room.mainImage}
-                      alt={room.name}
-                      onError={(e) => {
-                        e.target.src = 'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=600&q=80';
-                      }}
-                    />
+                    {room.id !== 'superior-twin' ? (
+                      <img
+                        src={room.mainImage}
+                        alt={room.name}
+                        onError={(e) => {
+                          e.target.src = 'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=600&q=80';
+                        }}
+                      />
+                    ) : (
+                      <div className="room-card-media-placeholder" />
+                    )}
                   </div>
                   <span className="room-card-tag">{String(i + 1).padStart(2, '0')}</span>
                 </div>
